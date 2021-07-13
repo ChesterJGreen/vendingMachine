@@ -20,6 +20,15 @@ function draw() {
   document.getElementById('money').innerText = `${money}`
   document.getElementById('snickers').innerText = `${ProxyState.snack.name}`
   document.getElementById('snickersPrice').innerText = `${ProxyState.snack.price.toFixed(2)}`
+  document.getElementById('snickersImg').src = `${ProxyState.snack.imgUrl}`
+  //   document.getElementById('snack1').innerHTML = 
+  //   `<div class="card">
+  //   <button class="btn btn-primary" onclick="app.vendingsController.buySnack('snack')">Buy
+  //       <span id="snickers">Snickers</span></button>
+  //   <div class="text-center">$<span id="snickersPrice"></span><br><img width="70" height="55"
+  //           src="app.vendingsController.">
+  //   </div>
+  // </div>`
 
 }
 

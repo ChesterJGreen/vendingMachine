@@ -7,11 +7,11 @@ export default class Snack {
      * @param {number} price
      * @param {number} stock 
      */
-    constructor(name, imgUrl, price) {
+    constructor(name, imgUrl, price, stock) {
         this.name = name;
         this.imgUrl = imgUrl;
         this.price = price;
-        this.stock = 0
+        this.stock = stock;
     }
 
 }

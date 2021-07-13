@@ -7,7 +7,8 @@ class AppState extends EventEmitter {
   values = []
   totalMoney = 2
   addMoney = 0.05
-  snack = new Snack('Snickers', 'https://marschocolate.com/static/snickers-original-single-e10d6bae103d9da3c6bf853a120ffcd8.png', 1.50,)
+  snack = new Snack('Snickers', 'https://marschocolate.com/static/snickers-original-single-e10d6bae103d9da3c6bf853a120ffcd8.png', 1.50, 0)
+  snack2 = new Snack('Mountain Dew', 'https://www.totalwine.com/dynamic/270x/media/sys_master/twmmedia/h68/hba/8796494823454.png', 2, 0)
 
 }
 
