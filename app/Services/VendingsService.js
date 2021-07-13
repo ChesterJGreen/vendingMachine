@@ -9,6 +9,11 @@ class VendingsService {
     }
 
   }
+  getMoney() {
+    ProxyState.totalMoney += ProxyState.addMoney
+
+
+  }
 }
 
 export const vendingsService = new VendingsService();

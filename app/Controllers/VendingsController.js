@@ -18,6 +18,8 @@ import { vendingsService } from "../Services/VendingsService.js";
 function draw() {
   let money = ProxyState.totalMoney
   document.getElementById('money').innerText = `${money}`
+  document.getElementById('snickers').innerText = `${ProxyState.snack.name}`
+  document.getElementById('snickersPrice').innerText = `${ProxyState.snack.price}`
 
 }
 
@@ -32,6 +34,11 @@ export default class VendingsController {
   buySnack(item) {
     //console.log('buy snack from the controller')
     vendingsService.buySnack(item)
+    draw()
+  }
+
+  getMoney() {
+    vendingsService.getMoney()
     draw()
   }
 }
