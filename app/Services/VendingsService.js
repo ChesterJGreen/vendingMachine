@@ -13,6 +13,7 @@ class VendingsService {
     ProxyState.totalMoney += ProxyState.addMoney
 
 
+
   }
 }
 
