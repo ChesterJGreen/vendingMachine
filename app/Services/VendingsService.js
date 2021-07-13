@@ -3,11 +3,10 @@ import { ProxyState } from "../AppState.js";
 
 class VendingsService {
 
-  buySnack() {
-
-
-
-    console.log('buy snack from the services')
+  buySnack(item) {
+    if (ProxyState.totalMoney >= ProxyState.snack.price) {
+      ProxyState.totalMoney -= ProxyState.snack.price
+    }
 
   }
 }

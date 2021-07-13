@@ -5,6 +5,8 @@ import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
   values = []
+  totalMoney = 2
+  addMoney = 0
   snack = new Snack('Snicker', 'https://marschocolate.com/static/snickers-original-single-e10d6bae103d9da3c6bf853a120ffcd8.png', 1.50,)
 
 }

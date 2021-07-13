@@ -43,16 +43,22 @@
         <div class="row">
             <div class="col-12">
                 <div class="row">
-                    <div class="col-4"></div>
-                    <div class="col-4">
-                        <img src="http://placehold.it/350x500">
+                    <div class="col-3 align-self-center">
+                        <div class="card text-center">
+                            <h5>You have $<span id="money">0.00</span></h5>
+                        </div>
                     </div>
-                    <div class="col-4"></div>
+                    <div class="col-6">
+                        <img src="https://www.evending.com/wp-content/uploads/2020/03/EliteSeriesSnack5W-600x600.png">
+
+                    </div>
+                    <div class="col-3"></div>
                 </div>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
-                        <button class="btn btn-primary" onclick="app.vendingsController.buySnack()">Buy
-                            Snack</button>
+                        <button class="btn btn-primary" onclick="app.vendingsController.buySnack('snack')">Buy
+                            <span id="snickers">Snickers</span><br><img
+                                src="https://marschocolate.com/static/snickers-original-single-e10d6bae103d9da3c6bf853a120ffcd8.png"></button>
                     </div>
                 </div>
             </div>
