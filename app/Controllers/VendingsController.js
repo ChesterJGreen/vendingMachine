@@ -26,5 +26,8 @@ export default class VendingsController {
   addValue() {
     vendingsService.addValue()
   }
-  buySnack()
+  buySnack() {
+    console.log('buy snack from the controller')
+    vendingsService.buySnack()
+  }
 }
